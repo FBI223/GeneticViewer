@@ -10,4 +10,4 @@ conda install -y \
   cyvcf2 pysam scikit-allel \
   bcftools samtools bedtools plink plink2 snpeff ensembl-vep
 
-pip install myvariant
+pip install myvariant dash
