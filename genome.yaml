@@ -1,0 +1,42 @@
+name: genome
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - biopython
+  - plotly
+  - zarr
+  - cyvcf2
+  - pysam
+  - scikit-allel
+  - bcftools
+  - samtools
+  - bedtools
+  - plink
+  - plink2
+  - snpeff
+  - ensembl-vep
+  - pip
+  - pip:
+      - myvariant
+
+
+pip install \
+  cyvcf2 \
+  pysam \
+  biopython \
+  pandas \
+  numpy \
+  matplotlib \
+  seaborn \
+  plotly \
+  myvariant \
+  scikit-allel \
+  zarr
+
