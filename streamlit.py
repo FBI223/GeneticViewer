@@ -1,10 +1,11 @@
 import streamlit as st
 import pandas as pd
 from cyvcf2 import VCF
+from consts import *
 
 st.title("VCF Viewer + VEP Annotacje")
 
-vcf = VCF("annotated.vcf")
+vcf = VCF(vcf_path)
 rows = []
 for v in vcf:
     csq = v.INFO.get('CSQ')

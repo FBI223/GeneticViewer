@@ -1,8 +1,9 @@
 import pandas as pd
 from cyvcf2 import VCF
 import plotly.express as px
+from consts import *
 
-vcf = VCF("annotated.vcf")
+vcf = VCF(vcf_path)
 
 data = []
 for v in vcf:
