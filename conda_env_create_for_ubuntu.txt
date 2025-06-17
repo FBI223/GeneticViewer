@@ -1,0 +1,13 @@
+conda create -n genome python=3.10 -y
+conda activate genome
+
+conda config --add channels conda-forge
+conda config --add channels bioconda
+conda config --set channel_priority strict
+
+conda install -y \
+  pandas numpy matplotlib seaborn plotly biopython zarr \
+  cyvcf2 pysam scikit-allel \
+  bcftools samtools bedtools plink plink2 snpeff ensembl-vep
+
+pip install myvariant
